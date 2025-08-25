@@ -1,4 +1,21 @@
 User-agent: *
-Allow: /
+Disallow: 
 
 Sitemap: https://mdhdj.github.io/Ortsnamn-Deutschland/sitemap.xml
+Host: https://mdhdj.github.io/Ortsnamn-Deutschland
+
+# تجنب فهرسة الروابط ذات المعلمات إذا كانت توجد
+Disallow: /*?*
+
+# السماح بفهرسة ملفات CSS و JS
+Allow: /assets/css/
+Allow: /assets/js/
+
+User-agent: Googlebot
+Allow: /*
+
+User-agent: Bingbot
+Allow: /*
+
+# تأخير الزحف (ثواني)
+Crawl-delay: 5
